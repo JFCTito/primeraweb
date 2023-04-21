@@ -1,0 +1,14 @@
+/* estilos de reset */
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+/* Globals */
+
+html {
+    font-family:'courier new', courier, monospace;
+}
+
+
