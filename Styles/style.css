@@ -11,11 +11,46 @@ html {
     grid-template-rows: repeat(4, 4rem);
     grid-template-columns: repeat(8, 4rem);
     background-color: white;
+
+    transform: rotate(-45deg);
+
 }
 
-.caja{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: gray;
+
+
+.caja1{
+    background-color:#009BB1;
+}
+.caja2{
+    background-color:#F08A02;
+    grid-column: 1;
+}
+.caja3{
+    background-color:#06368B;
+    grid-column: 1;
+}
+.caja4{
+    background-color:#009139;
+    grid-column: 1;
+}
+.caja5{
+    background-color:#E40061;
+}
+.caja6{
+    background-color:#6461A4;
+}
+.caja7{
+    background-color:#FFCC01;
+}
+.caja8{
+    background-color:#64B8E4;
+}
+.caja9{
+    background-color:#E3001B;
+}
+.caja10{
+    background-color:#96BF0D;
+}
+.caja11{
+    background-color:#93117E;
 }
