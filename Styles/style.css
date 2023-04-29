@@ -1,0 +1,93 @@
+* {
+    margin:0;
+    padding: 0;
+    color: white;
+    text-align: center;
+/*     border: 1px solid red; guia de bordes para eliminar */
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+/* colores black theme: 
+dark fondo: #121212
+half dark: #252526
+light: #3e3e42
+*/
+
+/* #banner {
+     display: none;
+    height: 100px;
+    width: 768px;
+    object-fit: cover;
+    object-position: 0% 67%;
+} */
+
+.header {
+    grid-area: header;
+    background-color: black;
+    background-image: url(/primeraweb/img/dead-trees.jpg);
+    background-position: center;
+}
+
+.header h1 {
+    padding: 30px;
+    margin: 1px;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color:black;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #121212;
+}
+
+.section {
+    grid-area: section;
+    background-color:  #121212;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+.body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "section"
+    "sidebar"
+    "footer";
+}
+
+.body {
+    grid-template-rows: 100px 40px auto 40px 100px;
+    grid-template-columns: 768px;
+}
+
+@media (min-width: 768px) {
+    .body {
+        grid-template-columns: 300px auto;
+        grid-template-rows: 100px 40px auto 100px;
+        grid-template-areas: 
+        "header header"
+        "navbar navbar" 
+        "sidebar section"
+        "footer footer";
+    }
+    .sidebar {
+        border-right: 1px solid white;
+    }        
+}
